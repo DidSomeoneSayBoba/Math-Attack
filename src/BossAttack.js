@@ -78,7 +78,8 @@ export default class BossAttack {
     if(tpsitey>self.GAME_HEIGHT){
       tpsitey = self.GAME_HEIGHT;
     }
-
+    this.antagonist.position.x=tpsitex;
+    this.antagonist.position.y=tpsitey;
     console.log("teleporting to ()"+tpsitex+","+tpsitey+")in relation to playerposition");
 
     if(this.playerIsInRange()){
